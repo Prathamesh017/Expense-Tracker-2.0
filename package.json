@@ -3,9 +3,10 @@
   "version": "1.0.0",
   "description": "Expense Tracker 2.0",
   "main": "index.js",
+  "type":"module",
   "scripts": {
-    "start": "node Server/index.js",
-    "server": "nodemon Server/index.js",
+    "start": "node Backend/index.js",
+    "server": "nodemon Backend/index.js",
     "client": "npm start --prefix client",
     "dev": "concurrently \"npm run server\" \"npm run client\""
   },
