@@ -1,0 +1,30 @@
+.balance-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    align-items: flex-start;
+}
+.income-expense-container{
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+}
+.income ,.expense{
+    width: 50%;
+    padding: 1em;
+    box-shadow: var(--box-shadow);
+    font-weight:bold;
+    text-align: center;
+}
+#income-amount-color{
+    color:#2eec71;
+    font-size: 20px;
+    
+}
+#expense-amount-color{
+    color:#c0293b;
+    font-size: 20px;
+}

@@ -1,0 +1,35 @@
+.item-single{
+    box-shadow: var(--box-shadow);
+    padding: 0.4em;
+    width: 100%;
+
+}
+
+.items-container{
+    width: 100%;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 20px;
+}
+span{
+   display: inline-block;
+   position: absolute;
+   right: 0;
+   padding-right: 4px;
+}
+.item{
+    display: flex;
+    column-gap: 10px;
+}
+.delete-button{
+    background-color: transparent;
+    color:lightpink;
+    border: none;
+}
+
+.delete-button:hover{
+   cursor: pointer;
+   color:red;
+}
