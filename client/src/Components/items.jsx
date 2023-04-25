@@ -13,7 +13,7 @@ function ItemsContainer(props) {
   });
   }
  
-  console.log(state);
+
   return (
     <div className='items-container'>
        {

@@ -3,7 +3,6 @@ import UserService from '../services/Service.js'
 export const getAllExpense = async (req, res) => {
   try {
     let allExpenses = await UserService.getAllExpense();
-    console.log(allExpenses);
     return res
       .status(200)
       .json({
