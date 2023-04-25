@@ -1,13 +1,13 @@
 import { ExpenseModel } from '../model.js/model.js'
 const createExpense = async (reqBody) => {
-  let expense;
-  const expenseObj= new ExpenseModel({
-    name:reqBody.name,
-    amount:reqBody.amount,
-  });
-  
+  let expense
+  const expenseObj = new ExpenseModel({
+    name: reqBody.name,
+    amount: reqBody.amount,
+  })
+
   try {
-    expense = await expenseObj.save();
+    expense = await expenseObj.save()
   } catch (error) {
     console.log('Error', error)
     throw error
@@ -24,8 +24,8 @@ const getAllExpense = async () => {
   }
 }
 const deleteExpense = async (id) => {
-  const pt=await ExpenseModel.deleteOne({ _id:id });
-  return;
+  const pt = await ExpenseModel.deleteOne({ _id: id })
+  return
 }
 const UserService = {
   createExpense,
