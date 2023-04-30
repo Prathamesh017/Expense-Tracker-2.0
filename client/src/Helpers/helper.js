@@ -1,5 +1,5 @@
 import axios from 'axios'
-const url = `api/v1/expense`
+const url = `https://expense-backend-26xw.onrender.com/api/v1/expense`
 export async function getList() {
   try {
     const response = await axios.get(url);
